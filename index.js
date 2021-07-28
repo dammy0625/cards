@@ -8,6 +8,7 @@ const cart = document.querySelector(".cart")
 const check = document.querySelector(".check")
 const out = document.querySelector(".out")
 const h4= document.querySelector("h4")
+const pay= document.querySelector(".pay")
 const phone= document.querySelector(".phone")
 
 
@@ -24,7 +25,10 @@ buy.forEach((btn)=>{
         let sec = fest.firstChild
         let ted = sec.nextSibling
         let sr = ted.getAttribute("src")
-        h4.innerText += ted.nextElementSibling.innerText
+        let sik = ted.nextElementSibling.innerText
+        let snbg = parseInt(sik.slice(1,6))
+h4.innerHTML = snbg
+        
         
 if(sr === 'davedr.jpg'){
 h3.innerHTML = "this is a project i made of @ santan-dave <br> i made this during the lockdown <br> i was really in my element creating this <br><br><strong>made with graphite pencils and other simple material like <br> stump,tombow eraser,etc..</strong> "
@@ -49,8 +53,18 @@ h3.innerHTML = "this is a project i made of @ santan-dave <br> i made this durin
 setTimeout(()=>{
 out.classList.add("outni")
 
+
 },900)
-
-
+}
+pay.onclick = ()=>{
+    if(confirm("confirm payment..and proceed to final chekout..")){
+if(alert("thanks for shopping with us.. ") !== 'ok'){
+    out.classList.remove("outni")
+}else{console.log('no')}
+    }else{
+        if(confirm("go back to home-page")){
+out.classList.remove("outni")
+        }
     }
+}
 })

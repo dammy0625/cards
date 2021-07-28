@@ -80,7 +80,7 @@ h6{
     background-color: rgba(10, 118, 151, 0.945);
     z-index: 2000;
     position: absolute;
-    transform: translateX();
+    transform: translateX(-100%);
     transition: transform 1s;
     display: flex;
     flex-direction: column;
