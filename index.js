@@ -8,6 +8,15 @@ const cart = document.querySelector(".cart")
 const check = document.querySelector(".check")
 const out = document.querySelector(".out")
 const h4= document.querySelector("h4")
+const phone= document.querySelector(".phone")
+
+
+phone.onclick = ()=>{
+    
+    if(confirm("would you like to text me for more details....(although am not selling)")){
+        alert("yeepee")
+    }else{alert("nahhh")}
+}
 
 buy.forEach((btn)=>{
     btn.onclick = ()=>{

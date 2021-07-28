@@ -99,9 +99,13 @@ ul{
 }
 li{
     margin: 10px;
-    color: tomato;
+    background: linear-gradient(rgba(240, 119, 6, 0.959),rgba(10, 245, 166, 0.993));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     font-size: 30px;
     font-weight: lighter;
+    cursor: pointer;
 }
 h4{
     width: 100%;
