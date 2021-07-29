@@ -88,6 +88,19 @@ h6{
     flex-direction: column;
     
 }
+.soap{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 118, 151, 0.945);
+    z-index: 2000;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: transform 1s;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
 ul{
     position: absolute;
     width: 60%;
@@ -157,10 +170,25 @@ h3{
     line-height: 30px;
     text-align: center;
 }
-h2{
+.ex{
     position: absolute;
     left: 20px;
     top: 20px;
+}
+.exik{
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+}
+.simp{
+    width: 100%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 30%;
 }
 .slider button{
     position: absolute;
@@ -187,8 +215,39 @@ h2{
     background-color: green;
     color: thistle;
 }
+.chk{
+    right: 45%;
+    background-color: green;
+    color: thistle;
+    position: absolute;
+    bottom: 150px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.685),-2px -4px 8px rgba(255, 255, 255, 0.295);
+}
 .slid{
     transform: translateX(0);
+}
+.cecle{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border-radius: 50%;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    display: none;
+    
 }
 
 @media(max-width:450px){
@@ -222,7 +281,7 @@ h2{
         font-size: 17px;
     }
     ul{
-        left: 50px;
+        left: 30px;
     }
     input{
         margin-left: -60px;
@@ -232,4 +291,14 @@ h2{
         bottom: 180px;
         font-size: 18px;
     }
+    .chk{
+        bottom: 200px;
+        right: 35%;
+    }
+    .soap{
+        font-size: 10px;
+        }
+        .exik{
+            top: 20px;
+        }
 }
