@@ -19,7 +19,12 @@ const soap = document.querySelector(".soap")
 const chk = document.querySelector(".chk")
 const cad= document.querySelector("#cad")
 const cvv= document.querySelector("#cvv")
+const ile= document.querySelector(".ile")
+const home= document.querySelector(".home")
 
+ile.onclick = ()=>{
+    home.classList.add("hme")
+}
 phone.onclick = ()=>{
    let taju = confirm("althogh i am currently not selling...would you like to contact me..maybe for work?? ")
    if(taju){
@@ -66,7 +71,7 @@ h3.innerHTML = "this is a project i made of @ santan-dave <br> i made this durin
 }else if(sr === 'migueldr.jpg'){
     h3.innerHTML = "this is a project i made of an acquaintance <br> this is  one of my projects i made during the lockdown also.. <br>am glad it came out soo well,and am proud of the result.."
 }
-        slider.style.cssText =  'background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)),url(' + sr + ');background-size: cover;'
+        slider.style.cssText =  'background-image:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.85)),url(' + sr + ');background-size: cover;'
         
         slider.classList.add("slid")   
     }
