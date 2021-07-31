@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     overflow: hidden;
     width: 100vw;
@@ -8,7 +12,6 @@ body{
     height: 100vh;
     border: none;
     position: relative;
-    top: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
