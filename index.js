@@ -26,13 +26,13 @@ ile.onclick = ()=>{
     home.classList.add("hme")
 }
 phone.onclick = ()=>{
-   let taju = confirm("althogh i am currently not selling...would you like to contact me..maybe for work?? ")
+   let taju = confirm("although i am currently not selling...would you like to contact me..maybe for work?? ")
    if(taju){
        alert("+234-08068167947")
    }
 }
 mail.onclick = ()=>{
-   let tju = confirm("althogh i am currently not selling...would you like to send an email..maybe for work?? ")
+   let tju = confirm("although i am currently not selling...would you like to send an email..maybe for work?? ")
    if(tju){
        alert("muyiwalateef@gmail.com")
    }
