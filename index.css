@@ -72,7 +72,6 @@ h6{
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.795);
     position: absolute;
-    left: -10px;
     z-index: 100;
     transform: translateX(110%);
     transition: transform 1s;
@@ -221,7 +220,7 @@ input{
 }
 h3{
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 140px;
+    margin-top: 90px;
     width: 100%;
     line-height: 30px;
     text-align: center;
