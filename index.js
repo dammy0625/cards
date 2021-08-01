@@ -71,7 +71,7 @@ h3.innerHTML = "this is a project i made of @ santan-dave <br> i made this durin
 }else if(sr === 'migueldr.jpg'){
     h3.innerHTML = "this is a project i made of an acquaintance <br> this is  one of my projects i made during the lockdown also.. <br>am glad it came out soo well,and am proud of the result.."
 }
-        slider.style.cssText =  'background-image:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.85)),url(' + sr + ');background-size: cover;'
+        slider.style.cssText =  'background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url(' + sr + ');background-size: cover;'
         
         slider.classList.add("slid")   
     }
