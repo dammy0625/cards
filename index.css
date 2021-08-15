@@ -1,403 +1,458 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
-    overflow: hidden;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: rgba(177, 116, 152, 0.459);
+}
+.pg{
     width: 100vw;
     height: 100vh;
+}
+#damis{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-family:  monospace;
+    font-size: 40px;
+    letter-spacing: 10px;
+    font-weight: 50px;
+    position: relative;
+}
+#circle{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(177, 116, 152, 0.582);
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+    position: relative;
+}
+#art{
+    font-size: 18px;
+    position: absolute;
+    left: 538px;
+    top: 40px;
+    color: rgb(114, 119, 114);
+}
+#gallery{
+    position: absolute;
+    left: 450px;
+    transform-origin: 0%;
+    transform: rotate(-5deg);
+    top: 75px;
+    z-index: 5;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+}
+.dave{
+    width: 250px;
+    height: 250px;
+    border: 5px solid rgba(255, 255, 255, 0.74);
+    position: absolute;
+    right: 20%;
+    
+    top: 50px;
+   
+    cursor: pointer;
+
+}
+.grandma{
+    width: 160px;
+    height: 160px;
+    border: 5px solid rgba(255, 255, 255, 0.74);
+    position: absolute;
+    right: 310px;
+    top: 230px;
+    z-index: -20;
+    
+    cursor: pointer;
+    
+}
+.litu{
+    cursor: pointer;
+    width: 160px;
+    height: 160px;
+    border: 5px solid rgba(255, 255, 255, 0.74);
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    z-index: 44;
+    transform: rotate(15deg);
+   
+}
+.miguel{
+    cursor: pointer;
+    width: 160px;
+    height: 160px;
+    border: 5px solid rgba(255, 255, 255, 0.74);
+    position: absolute;
+    left: -20px;
+    top: 40px;
+    z-index: 44;
+    transform: rotate(-18deg);
+  
+}
+.litu img{
+    width: 100%;
+}
+.girl{
+    cursor: pointer;
+    width: 170px;
+    height: 170px;
+    border: 5px solid rgba(255, 255, 255, 0.74);
+    position: absolute;
+    right: 10px;
+    top: 240px;
+    transform: rotate(7deg);
+    overflow: hidden;
+}
+.dave img{
+    width: 100%;
+}
+.girl img{
+    width: 110%;
+    
+}
+.grandma img{
+    width: 100%;
+    
+}
+.miguel img{
+    width: 100%;
+}
+.blk{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.473);
+    position: absolute;
+    color: rgba(255, 255, 255, 0.678);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0;
+}
+.box:hover .blk{
+    opacity: 1;
+}
+.contact{
+    position: absolute;
+    left: -240px;
+    top: -70px;
+    font-family:  monospace;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(126, 17, 153);
+    cursor: pointer;
+}
+.address{
+    position: absolute;
+    right: -240px;
+    top: -70px;
+    font-family:  monospace;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(126, 17, 153);
+    cursor: pointer;
+}
+.u{
+    top: -30px;
+    left: -270px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: 1s;
+    transform: translateY(-20px);
+    list-style-type: none;
+}
+.a{
+    top: -30px;
+    right: -270px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: 1s;
+    transform: translateY(-20px);
+    list-style-type: none;
+}
+.show{
+    opacity: 1;
+    transform: translateY(0px);
+    
 }
 .container{
-    width: 100vw;
-    height: 100vh;
-    border: none;
+    width: 80vw;
+    margin-left: 10%;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background:linear-gradient(rgba(86, 134, 118, 0.63),rgba(73, 107, 121, 0.623));
+    border: 1px dashed rgba(0, 0, 0, 0.664);
+    margin-top: 100px;
+    
+    
 }
-.cont{
+.collect{
+    position: absolute;
+    margin: 20px;
+    font-family:  BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box1{
     width: 90%;
-    height: 90%;
-    border: none;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.151);
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(245, 245, 245, 0.432);
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
 }
-.box{
-    width: 150px;
-    height: 180px;
-    border:none;
-    margin: 10px;
-    margin-left: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.74);
-    cursor: pointer;
-}
-
- img{
+.box1 img{
     width: 100%;
-    height: 70%;
+    height: 200px;
     object-fit: cover;
-    border-radius: 20px 20px 0 0 ;
-
+    
 }
-p{
-    font-size: 13px;
-    width: 100%;
-    text-align: center;
-    margin-top: -2px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+.box1 ul{
+    list-style-type: none;
 }
-h6{
-    margin-top: 20px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    background-color: red;
-    padding-bottom: 5px;
-    padding-top: 10px;
-    border-radius: 0 0 20px 20px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    letter-spacing: 2px;
+.box1 .name{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box1 .arti{
+    font-family:  monospace;
+    opacity: .6;
+}
+.box1 .price{
     font-size: 15px;
 }
-.slider{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.795);
+.box2{
+    width: 40%;
+    height: 255px;
     position: absolute;
-    z-index: 100;
-    transform: translateX(110%);
-    transition: transform 1s;
-    text-align: center;
-    color: white;
-    cursor: pointer;
-    
-}
-.out{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(10, 118, 151, 0.945);
-    z-index: 2000;
-    position: absolute;
-    transform: translateX(-100%);
-    transition: transform 1s;
-    display: flex;
-    flex-direction: column;
-    
-}
-.soap{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(10, 118, 151, 0.945);
-    z-index: 2000;
-    position: absolute;
-    transform: translateX(-100%);
-    transition: transform 1s;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    
-}
-.home{
-    width: 100%;
-    height: 100%;
-    background:linear-gradient(rgb(4, 165, 111),rgb(6, 130, 179));
-    z-index: 2000;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    color: rgba(255, 255, 255, 0.747);
-    
-}
-.hme{
-    opacity:1;
-  
-    animation: try 3s forwards;
-}
-@keyframes try{
-    0%{
-opacity: 1;
-    }
-    100%{
-        display: none;
-        pointer-events: none;
-        visibility: none;
-        opacity: 0;
-    }
-}
-.welcome{
-    width: 90%;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 1px;
-    position: absolute;
-    top: 30%;
     left: 5%;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.678);
+    top: 400px;
+    overflow: hidden;
 }
-.ile{
-    width: 90%;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 1px;
-    position: absolute;
-    bottom: 30%;
-    color: rgba(214, 236, 13, 0.938);
-    cursor: pointer;
-}
-ul{
-    position: absolute;
-    width: 60%;
-    left: 170px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    top: 30px;
-}
-li{
-    margin: 10px;
-    background: linear-gradient(rgba(240, 119, 6, 0.959),rgba(10, 245, 166, 0.993));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 30px;
-    font-weight: lighter;
-    cursor: pointer;
-}
-h4{
-    width: 100%;
-    text-align: center;
-    color: white;
-    position: absolute;
-    top: 50%;
-}
-input{
-    border-radius: 40px;
-    border: none;
-    outline: none;
-    padding: 10px;
-}
-.pay{
-    position: absolute;
-    bottom: 120px;
-    padding: 10px;
-    left: 45%;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.685),-2px -4px 8px rgba(255, 255, 255, 0.295);
-    background-color: red;
-    color: white;
-}
-#cad{
-    position: absolute;
-    top: 30%;
-    left: 40%;
-}
-#cvv{
-    position: absolute;
-    top: 40%;
-    left: 40%;
-}
-.outni{
-    transform: translateX(0);
-}
-h3{
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 90px;
-    width: 100%;
-    line-height: 30px;
-    text-align: center;
-}
-.ex{
-    position: absolute;
-    left: 20px;
-    top: 20px;
-}
-.exik{
-    position: absolute;
-    left: 20px;
-    top: -20px;
-    cursor: pointer;
-    color: black;
-    font-weight: bolder;
-}
-.simp{
-    width: 100%;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    position: absolute;
-    top: 30%;
-}
-.slider button{
-    position: absolute;
-    bottom: 50px;
-    padding: 10px;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.685),-2px -4px 8px rgba(255, 255, 255, 0.295);
-}
-.slider button:hover{
-    box-shadow: 2px 4px 8px rgba(255, 255, 255, 0.295) ,-2px -4px 8px rgba(0, 0, 0, 0.685);
-}
-.cart{
-    left: 300px;
-    background-color: rgb(194, 92, 8);
-    color: white;
-}
-.check{
-    right: 300px;
-    background-color: green;
-    color: thistle;
-}
-.chk{
-    right: 45%;
-    background-color: green;
-    color: thistle;
-    position: absolute;
-    bottom: 150px;
-    padding: 10px;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.685),-2px -4px 8px rgba(255, 255, 255, 0.295);
-}
-.slid{
-    transform: translateX(0);
-}
-.cecle{
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    border-radius: 50%;
-    color: whitesmoke;
-    text-align: center;
-    padding: 5px;
-    font-weight: bolder;
-    font-family: 'Courier New', Courier, monospace;
-    display: none;
+.box2 img{
+    width: 110%;
+    height: 200px;
+    object-fit: cover;
     
+}
+.box2 ul{
+    list-style-type: none;
+}
+.box2 .name{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box2 .arti{
+    font-family:  monospace;
+    opacity: .6;
+}
+.box2 .price{
+    font-size: 15px;
+}
+.box3{
+    width: 45%;
+    height: 255px;
+    position: absolute;
+    right: 5%;
+    top: 400px;
+    overflow: hidden;
+}
+.box3 img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+   
+    
+}
+.box3 ul{
+    list-style-type: none;
+}
+.box3 .name{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box3 .arti{
+    font-family:  monospace;
+    opacity: .6;
+}
+.box3 .price{
+    font-size: 15px;
+}
+.box4{
+    width: 45%;
+    height: 255px;
+    position: absolute;
+    left: 5%;
+    top: 700px;
+    overflow: hidden;
+}
+.box4 img{
+    width: 110%;
+    height: 200px;
+    object-fit: cover;
+   
+    
+}
+.box4 ul{
+    list-style-type: none;
+}
+.box4 .name{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box4 .arti{
+    font-family:  monospace;
+    opacity: .6;
+}
+.box4 .price{
+    font-size: 15px;
+}
+.box5{
+    width: 35%;
+    height: 355px;
+    position: absolute;
+    right: 5%;
+    top: 700px;
+    overflow: hidden;
+}
+.box5 img{
+    width: 110%;
+    height: 300px;
+    object-fit: cover;
+   
+    
+}
+.box5 ul{
+    list-style-type: none;
+}
+.box5 .name{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box5 .arti{
+    font-family:  monospace;
+    opacity: .6;
+}
+.box5 .price{
+    font-size: 15px;
 }
 
-@media(max-width:450px){
+.foot{
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    top: 110rem;
+    background-color: black;
+}
+.foot p{
+    color: rgba(245, 222, 179, 0.637);
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (max-width:430px){
     body{
-        overflow: hidden;
-    }
-    .container{
-        overflow: hidden;
-    }
-    .box{
-        width: 130px;
-        height: 170px;
-        margin-left: 40px;
-        font-size: 15px;
-    }
-    h6{
-        margin: 0;
+        width: 100vw;
         
     }
-    .slider{
-        background-position-x: -150px;
-        transform: translateX();
+    #damis{
+        font-size: 20px;
+        top: 40px;
+       
     }
-    h3{
-        font-size: 15px;
-        width: 90%;
-        margin-left: 20px;
+    #circle{
+        width: 320px;
+        height: 320px;
+        margin-top: 230px;
     }
-    .check{
-        right: 20px;
-        margin-bottom: 40px;
-        font-size: 17px;
-    }
-    .cart{
-        left: 20px;
-        margin-bottom: 40px;
-        font-size: 17px;
-    }
-    ul{
-        left: 30px;
-    }
-    input{
-        margin-left: -60px;
-    }
-    .pay{
-        left: 150px;
-        bottom: 180px;
-        font-size: 18px;
-    }
-    .chk{
-        bottom: 200px;
-        right: 35%;
-    }
-    .soap{
-        font-size: 10px;
-        }
-        .exik{
-            top: 20px;
-        }
-        .welcome{
-            font-size: 14px;
-        }
-        .ile{
-            font-size: 14px;
-            bottom: 40%;
-        }
-}
-
-@media (max-width:399px){
-    .box{
-        width: 270px;
-        height: 150px;
-        margin: 40px;
-        font-size: 15px;
-    }
-    body{
-        overflow: hidden;
-    }
-    .cont{
-        overflow-y: scroll;
-    }
-    .welcome{
+    #art{
         font-size: 14px;
+        position: absolute;
+        left: 198px;
+        top: 20px;
     }
-    .ile{
-        font-size: 14px;
-        bottom: 40%;
+    #gallery{
+        left: 140px;
+        top: 45px;
     }
-    .pay{
-        left: 130px;
-        bottom: 180px;
-        font-size: 18px;
+    .dave{
+        width: 200px;
+        height: 200px;
+    
     }
-    .slider{
-        background-position-x: -180px;
-        transform: translateX();
+    .grandma{
+        width: 140px;
+        height: 140px;
+        right: 170px;
+    }
+    .litu{
+        width: 140px;
+        height: 140px;
+        right: -15px;
+    }
+    .miguel{
+        width: 140px;
+        height: 140px;
+        left: -10px;
+        top: 25px;
+    }
+    .girl{
+        width: 140px;
+        height: 140px;
+    }
+    .contact{
+        left: -20px;
+        top: -140px;
+        font-size: 13px;
+    }
+    .address{
+        right: -20px;
+        top: -140px;
+        font-size: 13px;
+    }
+    .u{
+        top: -100px;
+        left: -10px;
+        opacity: 0;
+        width: 70px;
+        transform: translateY(0);
+    }
+    .a{
+        top: -100px;
+        right: -20px;
+        opacity: 0;
+        transition: 1s;
+        list-style-type: none;
+        transform: translateY(0px);
+    }
+    .show{
+        opacity: 1;
+        transform: translateY(0px);
+        
+    }
+    .box4{
+        width: 40%;
+    }
+    .box5{
+        width: 45%;
+    }
+    .foot{
+        top: 130rem;
+        background-color: rgba(0, 0, 0, 0.712);
     }
 }
